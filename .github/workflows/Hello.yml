@@ -16,8 +16,8 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      -name: Say Hello to users
-       run: echo "Hello users"
+      - name: Say Hello to users
+        run: echo "Hello users"
 
-      -name: Say Hellow to logged in users
-       run: echo "Hello current user $USER"
+      - name: Say Hellow to logged in users
+        run: echo "Hello current user $USER"
