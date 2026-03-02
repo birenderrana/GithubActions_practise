@@ -1,0 +1,23 @@
+#My First GithubAction
+
+#Name of the workflow
+name: Hello
+
+#Trigger that will run the workflow
+
+on:
+  push:
+    branches: [main]
+
+
+#What the workflow will do
+jobs:
+#Name of the job
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Say Hello to users
+       run: echo "Hello users"
+
+      -name: Say Hellow to logged in users
+       run: echo "Hello current user $USER"
