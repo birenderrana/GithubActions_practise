@@ -21,3 +21,9 @@ jobs:
 
       - name: Say Hellow to logged in users
         run: echo "Hello current user $USER"
+
+  details:
+    runs-on: ubunut-latest
+    steps:
+      - name: Docker and python version details
+        run: docker --version && python --version
