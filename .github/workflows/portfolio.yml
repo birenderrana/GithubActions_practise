@@ -2,9 +2,9 @@ name: Portfolio
 
 #Basically on is used as a trigger to run the workflow
 on:
-  push:
-    branches: [main]
-  workflow_dispatch:     #It means we have to manually enable the workflow
+ # push:
+  # branches: [main]
+  workflow_dispatch:     #It means we have to manually start the workflow
 
 permissions:
   pages: write
