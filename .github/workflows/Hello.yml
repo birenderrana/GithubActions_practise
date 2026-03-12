@@ -6,8 +6,7 @@ name: Hello
 #Trigger that will run the workflow
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
              
 
 
