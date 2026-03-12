@@ -19,8 +19,6 @@ jobs:
     steps:
       - name: checkput code
         uses: actions/checkout@v4
-        with:
-          path: main
 
       - name: Say Hello to users
         run: echo "Hello users"
@@ -37,3 +35,6 @@ jobs:
       - name: Print branch name
         run: |
           echo "Current branch: ${GITHUB_REF##*/}"
+        
+      - name: List all files in repo
+        run: git ls-files
