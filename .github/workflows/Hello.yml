@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkput code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Say Hello to users
         run: echo "Hello users"
