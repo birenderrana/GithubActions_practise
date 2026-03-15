@@ -1,2 +1,17 @@
-name: Schedule trigger
+name: Scheduled Job
 
+on:
+  schedule:
+    - cron: "*/5 * * * *"  # Runs daily at 10:00 UTC
+  workflow_dispatch:       # Optional: allows manual run from GitHub UI
+
+jobs:
+  run-schedule:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run a simple command
+        run: echo "Hello! This workflow runs on a schedule."
